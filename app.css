@@ -1,0 +1,141 @@
+/* Define colors for the analogous color palette */
+:root {
+    --primary-color: #ff6f61; /* Red */
+    --secondary-color: #9966CC; /* Light Orange */
+    --tertiary-color: #9D2933; /* Yellow */
+    --quaternary-color: #a2f7c8; /* Light Green */
+  }
+  
+  /* Add a horizontal rule below the name */
+#name {
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  
+  
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: var(--secondary-color);
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: var(--tertiary-color);
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mouseover effect */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  /* Analogous color palette */
+  .section {
+    background-color: var(--quaternary-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .section-content {
+    color: #555;
+  }
+  
+  /* Additional cool-looking styling */
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    color: #555;
+  }
+
+  /* Add bullet points for each list item under jobs and schools */
+#work-experience ul,
+#education ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* Style the bullet points */
+#work-experience ul li,
+#education ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Add spacing between the bullet point and the content */
+#work-experience ul li::before,
+#education ul li::before {
+  content: "\2022"; /* Bullet point */
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem
+}
+
+  
+  
